@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link href="css/style3.css" rel="stylesheet">-->
+    <style>
+        .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+ section {
+    width: 1500px;
+    height: 430px;
+    background: rgb(167, 221, 17);
+    animation: mymove 5s infinite;
+}
+
+div.c {
+    width: /*200px;*/200px;
+    height: /*430px;*/350px;
+    background-color: yellow;
+    text-align: center;
+    text-decoration: solid;
+    text-emphasis-color: black;
+  }
+
+p {
+  color: black;
+}
+
+@keyframes mymove 
+{
+  from {background-color: rgb(10, 227, 46);}
+  to {background-color: rgb(0, 255, 51);}
+}
+/*image overlay*/
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #d6eb11;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+    </style>
+</head>
+<body>
+  <div class="container">
+    <center><img src="https://rvu.edu.in/wp-content/uploads/2022/03/banner-image-02-01.png" alt="Rvu" width="700px" height="300px" class="image"></center>
+    <div class="overlay">
+      <div class="text">RVU University</div>
+    </div>
+  </div>
+   
+    <section>
+<center><h2>Welcome to RVU official website</h2></center>
+    <div class="c"><br><br>
+    <p>
+     <b>Course offered</b><br><br>
+     <b>BSc</b><br><br>
+     <b>Btech</b><br><br>
+     <b>Mtech</b><br><br>
+     <b>Mca</b><br><br>
+    </p>
+    </div>
+    
+</section>
+</body>
+</html>
